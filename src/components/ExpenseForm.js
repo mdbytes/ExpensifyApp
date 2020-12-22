@@ -90,7 +90,7 @@ export default class ExpenseForm extends React.Component {
             value={this.state.note}
             onChange={this.onNoteChange}
           ></textarea>
-          <button>Add Expense</button>
+          <button>Submit</button>
           {this.state.error && <p>{this.state.error}</p>}
         </form>
       </div>
