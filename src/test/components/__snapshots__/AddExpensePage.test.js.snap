@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should reander AddExpensePage correctly 1`] = `
+<div>
+  <h1>
+    Add Expense
+  </h1>
+  <ExpenseForm
+    onSubmit={[Function]}
+  />
+  From my add expense component
+</div>
+`;
