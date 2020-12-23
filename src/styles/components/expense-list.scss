@@ -1,0 +1,52 @@
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 950px;
+}
+
+th,
+td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+th {
+  border-bottom: 1px solid #000000;
+}
+.description {
+  width: 150px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.amount {
+  width: 150px;
+  text-align: right;
+  vertical-align: top;
+}
+
+.created-at {
+  width: 200px;
+  text-align: right;
+  vertical-align: top;
+}
+
+th.note {
+  width: 300px;
+  text-align: center;
+  vertical-align: top;
+}
+
+td.note {
+  width: 300px;
+  text-align: left;
+  padding-left: 10px;
+  word-wrap: break-word;
+  vertical-align: top;
+}
+
+.edit-button {
+  width: 150px;
+  text-align: left;
+  vertical-align: top;
+}

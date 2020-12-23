@@ -1,25 +1,28 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
+import moment from 'moment'
+import numeral from 'numeral'
 
-const ExpenseListItem = ({
-  dispatch,
+export const ExpenseListItem = ({
   id,
   description,
   note,
   amount,
   createdAt
 }) => (
-  <div>
-    <p>description: {description}</p>
+  <tr>
+    <td className='description'>{description}</td>
+    <td className='amount'>{numeral(amount / 100).format('$0, 0.00')}</td>
 
-    <p>note: {note}</p>
-    <p>amount: {amount}</p>
-    <p>created: {createdAt}</p>
-    <button>
-      <Link to={`/edit/${id}`}>Edit</Link>
-    </button>
-  </div>
+    <td className='created-at'>{moment(createdAt).format('MMMM Do YYYY')}</td>
+    <td className='note'>{note}</td>
+    <td className='edit-button'>
+      <button>
+        <Link to={`/edit/${id}`}>Edit</Link>
+      </button>
+    </td>
+  </tr>
 )
 
-export default connect()(ExpenseListItem)
+export default ExpenseListItem
