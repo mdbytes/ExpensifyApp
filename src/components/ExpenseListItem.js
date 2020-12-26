@@ -11,18 +11,19 @@ export const ExpenseListItem = ({
   amount,
   createdAt
 }) => (
-  <tr>
-    <td className='description'>{description}</td>
-    <td className='amount'>{numeral(amount / 100).format('$0, 0.00')}</td>
+  <div>
+    <p className='description'>{description}</p>
+    <p className='amount'>{numeral(amount / 100).format('$0, 0.00')}</p>
 
-    <td className='created-at'>{moment(createdAt).format('MMMM Do YYYY')}</td>
-    <td className='note'>{note}</td>
-    <td className='edit-button'>
+    <p className='created-at'>{moment(createdAt).format('MMMM Do YYYY')}</p>
+    <p className='note'>{note}</p>
+    <p className='edit-button'>
       <button>
         <Link to={`/edit/${id}`}>Edit</Link>
       </button>
-    </td>
-  </tr>
+    </p>
+    <br />
+  </div>
 )
 
 export default ExpenseListItem
