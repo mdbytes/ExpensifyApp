@@ -4,3 +4,5 @@ bundle.js.map
 styles.css
 styles.css.map
 dist
+.env.test
+.env.development

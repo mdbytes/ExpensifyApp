@@ -1,26 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render ExpenseListItem correctly 1`] = `
-<tr>
-  <td
+<div>
+  <p
     className="description"
   >
     Gum
-  </td>
-  <td
+  </p>
+  <p
     className="amount"
   >
     $1.95
-  </td>
-  <td
+  </p>
+  <p
     className="created-at"
   >
     December 31st 1969
-  </td>
-  <td
+  </p>
+  <p
     className="note"
   />
-  <td
+  <p
     className="edit-button"
   >
     <button>
@@ -30,6 +30,7 @@ exports[`should render ExpenseListItem correctly 1`] = `
         Edit
       </Link>
     </button>
-  </td>
-</tr>
+  </p>
+  <br />
+</div>
 `;
