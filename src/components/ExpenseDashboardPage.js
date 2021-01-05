@@ -7,7 +7,6 @@ class ExpenseDashboardPage extends React.Component {
   render () {
     return (
       <div>
-        <p>Dashboard Page</p>
         <div>
           <ExpensesSummary />
           <ExpenseListFilters />
